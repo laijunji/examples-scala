@@ -40,7 +40,7 @@ object WatermarkGeneration {
 }
 
 /**
-  * Assigns timestamps to records and provides watermarks with a 1 minute out-of-ourder bound when being asked.
+  * Assigns timestamps to records and provides watermarks with a 1 minute out-of-order bound when being asked.
   */
 class PeriodicAssigner extends AssignerWithPeriodicWatermarks[SensorReading] {
 
