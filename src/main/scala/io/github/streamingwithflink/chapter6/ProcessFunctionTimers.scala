@@ -16,7 +16,7 @@ object ProcessFunctionTimers {
     // set up the streaming execution environment
     val env = StreamExecutionEnvironment.getExecutionEnvironment
 
-    // use event time for the application
+    // use process time for the application
     env.setStreamTimeCharacteristic(TimeCharacteristic.ProcessingTime)
 
     // ingest sensor stream
